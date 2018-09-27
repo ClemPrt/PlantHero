@@ -1,0 +1,46 @@
+let slider = {
+  "illustrations": [
+    "./images/slider/illustrations/selfwatering.png",
+    "./images/slider/illustrations/naturalcycle.png",
+    "./images/slider/illustrations/plantingmedium.png",
+    "./images/slider/illustrations/nutrition.png",
+    "./images/slider/illustrations/noelectricity.png",
+    "./images/slider/illustrations/doityourself.png"
+  ],
+
+  "icons": [
+  "./images/slider/icons/selfwatering.png",
+  "./images/slider/icons/naturalcycle.png",
+  "./images/slider/icons/plantingmedium.png",
+  "./images/slider/icons/nutrition.png",
+  "./images/slider/icons/noelectricity.png",
+  "./images/slider/icons/doityourself.png"
+  ],
+
+  "names": [
+    "self-watering",
+    "natural cycle",
+    "planting medium",
+    "nutrition",
+    "no electricity",
+    "do it yourself"
+  ],
+
+  "h3": [
+  "It's self-watering",
+  "Natural cycle",
+  "Planting medium",
+  "Nutrition",
+  "Zero electricity",
+  "Do it yourself"
+  ],
+
+  "descriptions": [
+  "Water is held in the tank by atmospheric pressure. It will gradually seep out onto the receded tray, and then reabsorbed by your plant through a special ceramic medium. Your one job is to refill the water tank whenever it gets low. A full tank lasts for about a month or more, depending on the temperature and humidity of the environment (psst, that’s only 12 refills a year).",
+  "It creates a consistent water cycle that keeps your plant gorgeous & healthy - Mother Nature knows best.",
+  "This ceramic medium has the ability to hold water and nutrients like your plant's life depends on it. So, no need to panic if you forgot to refill the water tank (again). This medium will remain moist for an extra 1 to 2 weeks, keeping your plant well-hydrated!",
+  "We created a multi-vitamin pill that contains a special mix of P, N and K nutrients, as well as probiotic microbes. This will keep your plant strong and healthy.",
+  "Zero electricity means its kind on your utility bill and the environment. Plus, you can place it wherever - there are no wires.",
+  "With Plant Hero, you'll only experience the fun in building and decorating your pot. All other duties are taken care of."
+  ]
+}

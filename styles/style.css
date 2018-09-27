@@ -257,7 +257,6 @@ span.kickstarter-button {
         flex-direction: row;
         align-content: space-around;
         list-style: none;
-        width: 10000px;
         transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); }
         .home-container .facts .slider ul.slideshow li.slide {
           display: flex;
@@ -266,14 +265,7 @@ span.kickstarter-button {
           width: 370px;
           border-radius: 15px;
           transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-          margin-right: 20vw; }
-          .home-container .facts .slider ul.slideshow li.slide:hover {
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.05);
-            transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); }
-          .home-container .facts .slider ul.slideshow li.slide.is-active {
-            width: 370px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.05);
-            transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); }
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.05); }
           .home-container .facts .slider ul.slideshow li.slide img.slide-illustration {
             width: 100%;
             border-radius: 15px 15px 0px 0px; }

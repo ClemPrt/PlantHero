@@ -17,6 +17,20 @@ function inViewport(textZone){
 
 document.addEventListener('scroll', inViewport)*/
 
+window.addEventListener('load', function(){
+  $(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+      center:true,
+      autoPlay: 4000,
+      autoWidth:true,
+      loop:true,
+      items : 3,
+      pagination : false,
+    });
+  });
+})
+
+
 let imgPositions = [0]
 let images = document.querySelectorAll('.pic-element img')
 let imgDescription = ['#8ACDAC', '#EAE1D8', '#23A06A', '#E9464B']
@@ -71,8 +85,8 @@ window.onload = function () {
     let conceptBloc = document.querySelector('.concept'),
         layerOne = document.querySelector('.concept-text'),
         layerTwo = document.querySelector('.concept-animation');
-    sliderContainer = document.querySelector('.slider');
-    sliderList = document.querySelector('.slideshow');
+        sliderContainer = document.querySelector('.slider');
+        sliderList = document.querySelector('.slideshow');
 
     conceptBloc.addEventListener('mousemove', function (e) {
         let pageX = e.clientX,
@@ -83,16 +97,51 @@ window.onload = function () {
         layerTwo.style.transform = 'translateX(-' + pageX / 200 + '%) translateY(-' + pageY / 350 + '%)';
     })
 
-    sliderContainer.addEventListener('wheel', function test(e) {
-        let pageX = e.deltaX
-        console.log('deltaX : ',pageX)
-        let matrix = new WebKitCSSMatrix(getComputedStyle(sliderList).transform)
-        console.log('matrix : ',matrix)
-        let currentTranslate=matrix.m41+pageX
-        console.log('currentTranslate : ',currentTranslate)
-        sliderList.style.transform = 'translateX(-' + currentTranslate + '%)'
+    /*liderContainer.addEventListener('dragstart', function(e) {
+        let pageX = e.clientX
+        console.log(pageX)
+        let newTranslation=currentTranslate+pageX
+        sliderList.style.transform = 'translateX(-' + newTranslation + '%)'
     })
-    sliderContainer.addEventListener('dragend', function (e) {
-        console.log('stop')
-    })
+    sliderContainer.addEventListener('dragstop', function(e){
+      let matrix = new WebKitCSSMatrix(getComputedStyle(sliderList).transform)
+      let currentTranslate=matrix.m41
+      console.log('currentTranslate : ',currentTranslate)
+    })*/
+}
+
+
+// CLIENTS SLIDER GENERATION
+let sliderIllustrations=JSON.stringify(slider.illustrations)
+let sliderIcons=JSON.stringify(slider.icons)
+let sliderNames=JSON.stringify(slider.names)
+let sliderH3=JSON.stringify(slider.h3)
+let sliderDescriptions=JSON.stringify(slider.descriptions)
+let sliderContainer=document.querySelector('.clients-carousel')
+sliderIllustrations=JSON.parse(sliderIllustrations)
+sliderIcons=JSON.parse(sliderIcons)
+sliderNames=JSON.parse(sliderNames)
+sliderH3=JSON.parse(sliderH3)
+sliderDescriptions=JSON.parse(sliderDescriptions)
+for(let i=0; i<sliderIllustrations.length; i++){
+  let liSlide=document.createElement('li')
+  let illustrationSlide=document.createElement('img')
+  let iconSlide=document.createElement('img')
+  let h3Slide=document.createElement('h3')
+  let pSlide=document.createElement('p')
+  liSlide.classList.add('slide')
+  sliderContainer.appendChild(liSlide)
+  illustrationSlide.setAttribute('src',sliderIllustrations[i])
+  illustrationSlide.setAttribute('alt',sliderNames[i])
+  illustrationSlide.classList.add('slide-illustration')
+  liSlide.appendChild(illustrationSlide)
+  iconSlide.setAttribute('src',sliderIcons[i])
+  iconSlide.setAttribute('alt',sliderNames[i])
+  iconSlide.classList.add('icon')
+  liSlide.appendChild(iconSlide)
+  h3Slide.innerHTML=sliderH3[i]
+  liSlide.appendChild(h3Slide)
+  pSlide.classList.add('slide-description')
+  pSlide.innerHTML=sliderDescriptions[i]
+  liSlide.appendChild(pSlide)
 }

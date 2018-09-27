@@ -7,6 +7,8 @@
   <meta name="description" content="Plant Hero, ">
   <title>Plant Hero - Make your plants happy again</title>
   <link rel="stylesheet" href="./styles/bootstrap.min.css">
+  <link href="./plugins/owl/owl.carousel.css" rel="stylesheet">
+  <link href="./plugins/owl/owl.transitions.css" rel="stylesheet">
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="shortcut icon" href="./images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
@@ -49,44 +51,7 @@
       <div class="col-lg-12 facts">
         <h2>Why Plant Hero?</h2>
         <div class="col-lg-12 slider">
-
-          <ul class="slideshow">
-            <li class="slide is-active">
-              <img class="slide-illustration" src="./images/slider/illustrations/self-watering.png" alt="">
-              <img class="icon" src="./images/slider/icons/self-watering.png" alt="">
-              <h3>It’s self watering</h3>
-              <p class="slide-description">Skip the daily watering. All you gotta do is reﬁll the water tank… just once a month.</p>
-            </li>
-            <li class="slide">
-              <img class="slide-illustration" src="./images/slider/illustrations/self-watering.png" alt="">
-              <img class="icon" src="" alt="">
-              <h3></h3>
-              <p class="slide-description"></p>
-            </li>
-            <li class="slide">
-              <img class="slide-illustration" src="./images/slider/illustrations/self-watering.png" alt="">
-              <img class="icon" src="" alt="">
-              <h3></h3>
-              <p class="slide-description"></p>
-            </li>
-            <li class="slide">
-              <img class="slide-illustration" src="./images/slider/illustrations/self-watering.png" alt="">
-              <img class="icon" src="" alt="">
-              <h3></h3>
-              <p class="slide-description"></p>
-            </li>
-            <li class="slide">
-              <img class="slide-illustration" src="./images/slider/illustrations/self-watering.png" alt="">
-              <img class="icon" src="" alt="">
-              <h3></h3>
-              <p class="slide-description"></p>
-            </li>
-            <li class="slide">
-              <img class="slide-illustration" src="./images/slider/illustrations/self-watering.png" alt="">
-              <img class="icon" src="" alt="">
-              <h3></h3>
-              <p class="slide-description"></p>
-            </li>
+          <ul class="slideshow owl-carousel clients-carousel">
           </ul>
         </div>
         <div class="col-lg-6 ">
@@ -135,7 +100,10 @@
     </div>
   </footer>
   <script src="./scripts/bootstrap.min.js"></script>
+  <script src="./databases/slider.json"></script>
   <script src="./scripts/app.js"></script>
+  <script src="./scripts/jquery.min.js"></script>
+  <script src="./plugins/owl/owl.carousel.js"></script>
 </body>
 
 </html>
