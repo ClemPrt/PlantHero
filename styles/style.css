@@ -445,4 +445,7 @@ main.story-container {
     main.story-container .pic-story .pic-list .pic-element:last-of-type {
       margin-bottom: attr(height); }
 
+#howitswork h2 {
+  font-size: 5rem; }
+
 /*# sourceMappingURL=style.css.map */
