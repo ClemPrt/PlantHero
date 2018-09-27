@@ -257,9 +257,14 @@ span.kickstarter-button {
         flex-direction: row;
         align-content: space-around;
         list-style: none;
+<<<<<<< HEAD
         transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); }
         .home-container .facts .slider ul.slideshow .owl-item {
           width: 370px; }
+=======
+        width: 10000px;
+        transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); }
+>>>>>>> 2670bbb959f56240cc3286d207f36d4fb52aff4b
         .home-container .facts .slider ul.slideshow li.slide {
           display: flex;
           flex-direction: column;
@@ -267,7 +272,18 @@ span.kickstarter-button {
           width: 370px;
           border-radius: 15px;
           transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+<<<<<<< HEAD
           box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.05); }
+=======
+          margin-right: 20vw; }
+          .home-container .facts .slider ul.slideshow li.slide:hover {
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.05);
+            transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); }
+          .home-container .facts .slider ul.slideshow li.slide.is-active {
+            width: 370px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.05);
+            transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); }
+>>>>>>> 2670bbb959f56240cc3286d207f36d4fb52aff4b
           .home-container .facts .slider ul.slideshow li.slide img.slide-illustration {
             width: 100%;
             border-radius: 15px 15px 0px 0px; }
@@ -439,4 +455,10 @@ main.story-container {
     main.story-container .pic-story .pic-list .pic-element:last-of-type {
       margin-bottom: attr(height); }
 
+<<<<<<< HEAD
+=======
+#howitswork h2 {
+  font-size: 5rem; }
+
+>>>>>>> 2670bbb959f56240cc3286d207f36d4fb52aff4b
 /*# sourceMappingURL=app.css.map */
