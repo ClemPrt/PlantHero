@@ -1,9 +1,12 @@
 #howitswork{
-    #bg1{
+    section{
+        height: calc(70vh - 100px);
+    }
+
+    .bg{
         background-image: url(../../../images/howitworks/automaticwatering.gif);
         background-size: cover;
         background-position: center;
-        margin-top: 10vw;
     }
 
     h2{

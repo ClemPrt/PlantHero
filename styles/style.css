@@ -472,11 +472,12 @@ main.story-container {
     main.story-container .pic-story .pic-list .pic-element:last-of-type {
       margin-bottom: attr(height); }
 
-#howitswork #bg1 {
+#howitswork section {
+  height: calc(70vh - 100px); }
+#howitswork .bg {
   background-image: url(../../../images/howitworks/automaticwatering.gif);
   background-size: cover;
-  background-position: center;
-  margin-top: 10vw; }
+  background-position: center; }
 #howitswork h2 {
   font-size: 4rem;
   margin: 3% 0% 3% 0%;
