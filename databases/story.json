@@ -1,0 +1,50 @@
+let story = {
+  "year": [
+    "2016",
+    "2017",
+    "2017",
+    "2017",
+    "2017",
+    "2018",
+    "2018",
+    "2018",
+    "2018",
+    "2019"
+  ],
+  "month": [
+    "December",
+    "March",
+    "July",
+    "November",
+    "December",
+    "January",
+    "February",
+    "September",
+    "November",
+    "April"
+  ],
+  "descriptions": [
+    "After few month of work and many test, we created our first prototype which arise from an efficient work by the two creators.",
+    "The months pass and the research deepens. We developed a second prototype and we modeled it in 3D.",
+    "Our second prototype is materialised in order to test it and improve our product to give a better piece to the public.",
+    "Our third and last prototype is create but some problems persist so we still need to work on it to improve the quality of our product.",
+    "In order to improve our third prototype we create a 3D model. This will allow us to better test our product.",
+    "We continue to test our product in order to stabilize the effectiveness of the product.",
+    "After good reviews internally, we decided to prepare a kickstarter campaign in order to carry out our project with the help of the donors.",
+    "Here it is! We finally launch a kickstarter campaign for more reviews and to arrive to a product close to perfection.",
+    "After a very good kickstarter campaign we have reached our financial objectif so we will be able to start the preparation of the production.",
+    "It’s the end of our project, we are proud to announce you the success of it and finally we are able to package and ship the product to all the contributors and surely more."
+  ],
+  "illustrations":[
+    "./images/story/illustrations/1.png",
+    "./images/story/illustrations/2.png",
+    "./images/story/illustrations/3.png",
+    "./images/story/illustrations/4.png",
+    "./images/story/illustrations/5.png",
+    "./images/story/illustrations/6.png",
+    "./images/story/illustrations/7.png",
+    "./images/story/illustrations/8.png",
+    "./images/story/illustrations/9.png",
+    "./images/story/illustrations/10.png"
+  ]
+}

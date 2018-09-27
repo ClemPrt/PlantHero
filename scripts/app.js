@@ -1,21 +1,21 @@
-/*let images=document.querySelectorAll('.pic-element img')
-let i=0
-let textZone=document.querySelector('.text-story')
-function inViewport(textZone){
-  let images=document.querySelectorAll('.pic-element img')
-  let viewport=images[0].getBoundingClientRect()
-  console.log(textZone)
-  if(viewport.top>=50 && viewport.bottom<=900){
-    console.log('yes')
-    document.querySelector('.text-story').style.backgroundColor='#8ACDAC'
-    }
-   else{
-    console.log('nope')
-    document.querySelector('.text-story').style.backgroundColor='#E9464B'
-  }
-}
+let kickstarterButton=document.querySelector('header .kickstarter-button')
+let body=document.querySelector('body')
+let beforeElement=document.querySelector('.main-container')
+kickstarterButton.addEventListener('mouseover', function(){
+  let gifContainer=document.createElement('div')
+  gifContainer.classList.add('hello-gif')
+  body.insertBefore(gifContainer,beforeElement)
+  let gif=document.createElement('img')
+  gif.setAttribute('src','./images/happy-hello.gif')
+  gif.setAttribute('alt','Hello gif plant')
+  gifContainer.appendChild(gif)
+})
+kickstarterButton.addEventListener('mouseleave', function(){
+  let gifContainer=document.querySelector('.hello-gif')
+  gifContainer.style.opacity='0'
+  setTimeout(function(){gifContainer.remove()}, 200)
+})
 
-document.addEventListener('scroll', inViewport)*/
 
 window.addEventListener('load', function(){
   $(document).ready(function(){
@@ -85,8 +85,6 @@ window.onload = function () {
     let conceptBloc = document.querySelector('.concept'),
         layerOne = document.querySelector('.concept-text'),
         layerTwo = document.querySelector('.concept-animation');
-        sliderContainer = document.querySelector('.slider');
-        sliderList = document.querySelector('.slideshow');
 
     conceptBloc.addEventListener('mousemove', function (e) {
         let pageX = e.clientX,
@@ -134,6 +132,9 @@ for(let i=0; i<sliderIllustrations.length; i++){
   pSlide.innerHTML=sliderDescriptions[i]
   liSlide.appendChild(pSlide)
 }
+
+// OUR STORY GENERATION (99 lol)
+
 
 
 // HOW IT WORKS GENERATION

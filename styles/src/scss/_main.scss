@@ -94,6 +94,16 @@ span.kickstarter-button {
     }
 }
 
+.hello-gif{
+  position: relative;
+  z-index: 1000;
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+  img{
+    position: fixed;
+    height: 190px;
+    right: 0;
+  }
+}
 /* ------------------- */
 
 
@@ -130,7 +140,7 @@ span.kickstarter-button {
                     content: '';
                     width: calc(5rem*11.1);
                     height: 28%;
-                    background: #EC9E9E;
+                    background: #98CBAE;
                     position: absolute;
                     top: 5rem;
                     z-index: -1;
@@ -203,7 +213,7 @@ span.kickstarter-button {
                 content: '';
                 width: calc(5rem*9.1);
                 height: 28%;
-                background: #EC9E9E;
+                background: #98CBAE;
                 position: absolute;
                 top: 5rem;
                 z-index: -1;
@@ -212,6 +222,7 @@ span.kickstarter-button {
 
         .slider {
             overflow-x: hidden;
+            cursor:grab;
             ul.slideshow {
                 display: flex;
                 flex-direction: row;
@@ -314,7 +325,7 @@ span.kickstarter-button {
             content: '';
             width: calc(5rem*5.4);
             height: 28%;
-            background: #EC9E9E;
+            background: #98CBAE;
             position: absolute;
             top: 5rem;
             z-index: -1;

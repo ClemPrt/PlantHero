@@ -46,15 +46,9 @@ main.story-container {
         transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 
         .timeline-element {
-            animation-duration: 1s;
-            animation-name: textPopOut;
-            animation-fill-mode: backwards;
 
             &.is-active {
                 display: inline-block;
-                animation-duration: 1s;
-                animation-name: textPopIn;
-                animation-fill-mode: backwards;
 
                 span {
                     display: inline-block;
@@ -68,17 +62,11 @@ main.story-container {
             span {
                 display: none;
                 font-size: 15rem;
-                animation-duration: 1s;
-                animation-name: textPopOut;
-                animation-fill-mode: backwards;
             }
 
             p {
                 display: none;
                 font-size: 1.6rem;
-                animation-duration: 1s;
-                animation-name: textPopOut;
-                animation-fill-mode: backwards;
             }
         }
     }
