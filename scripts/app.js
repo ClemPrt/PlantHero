@@ -83,12 +83,14 @@ window.onload = function () {
         layerTwo.style.transform = 'translateX(-' + pageX / 200 + '%) translateY(-' + pageY / 350 + '%)';
     })
 
-    sliderContainer.addEventListener('mousemove', function (e) {
-        let pageX = e.clientX
-        let lastX = pageX
-        sliderList.style.transform = 'translateX(-' + pageX / 100 + '%)'
-        let style = getComputedStyle(sliderList).transform
-        console.log(style)
+    sliderContainer.addEventListener('wheel', function test(e) {
+        let pageX = e.deltaX
+        console.log('deltaX : ',pageX)
+        let matrix = new WebKitCSSMatrix(getComputedStyle(sliderList).transform)
+        console.log('matrix : ',matrix)
+        let currentTranslate=matrix.m41+pageX
+        console.log('currentTranslate : ',currentTranslate)
+        sliderList.style.transform = 'translateX(-' + currentTranslate + '%)'
     })
     sliderContainer.addEventListener('dragend', function (e) {
         console.log('stop')
