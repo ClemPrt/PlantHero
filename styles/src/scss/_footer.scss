@@ -1,7 +1,7 @@
 /* Footer nav CSS */
 footer {
     z-index: 999;
-    background: #EAE2D8;
+    background: #FFF;
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
     font-weight: 600;
@@ -11,7 +11,7 @@ footer {
         display: flex;
         flex-direction: row;
         align-content: space-between;
-        justify-content: center;
+        justify-content: space-around;
 
         .footer-nav {
             h3 {
@@ -74,10 +74,43 @@ footer {
                 background: transparent;
                 border: none;
                 border-bottom: 1px solid black;
+                transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+                &:focus{
+                  border-color:#23A06A;
+                  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+                }
             }
         }
 
-        .socials {}
+        .socials {
+          display:flex;
+          flex-direction:column;
+          justify-content: space-between;
+          align-items: flex-end;
+          .logo-planthero{
+              width: 126px;
+              height: 55px;
+              background:url('../images/logo.png');
+              background-size: cover;
+            }
+          .social-networks{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 126px;
+            a{
+              img{
+                width:35px;
+                opacity:0.71;
+                transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+                &:hover{
+                  opacity:1;
+                  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+                }
+              }
+            }
+          }
+        }
     }
 }
 

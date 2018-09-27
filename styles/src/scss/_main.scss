@@ -109,7 +109,7 @@ span.kickstarter-button {
         flex-direction: row;
         align-content: center;
         min-height: 470px;
-        margin-bottom: 50px;
+        margin: 100px 0 150px 0;
 
         .concept-text {
             display: flex;
@@ -218,6 +218,11 @@ span.kickstarter-button {
                 align-content: space-around;
                 list-style: none;
                 transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+                padding:0;
+                .owl-item{
+                  display: flex;
+                  justify-content: center;
+                }
                 li.slide {
                   display: flex;
                   flex-direction: column;
@@ -226,6 +231,7 @@ span.kickstarter-button {
                   border-radius: 15px;
                   transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
                   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10), 0 6px 6px rgba(0, 0, 0, 0.05);
+                  margin:20px 0;
                   img.slide-illustration {
                       width: 100%;
                       border-radius: 15px 15px 0px 0px;
@@ -261,8 +267,9 @@ span.kickstarter-button {
                   &:hover h3 {
                       margin-bottom: 40px;
                       transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-
+                      color: #23A06A;
                       &::after {
+                          background: #23A06A;
                           height: 30px;
                           transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
                       }
@@ -300,7 +307,7 @@ span.kickstarter-button {
         font-size: $text-size-title;
         font-weight: 700;
         position: relative;
-        margin-bottom: 50px;
+        margin-bottom: 80px;
         z-index: 1;
 
         &::before {
@@ -317,7 +324,10 @@ span.kickstarter-button {
     iframe {
         width: 1024px;
         height: 526px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
+    }
+    .button-work{
+      margin-bottom:80px;
     }
 }
 
@@ -330,9 +340,8 @@ span.kickstarter-button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #8ACDAC;
-    padding: 70px 0;
-
+    background:url('../images/background-kickstarter.jpg') no-repeat center center fixed;
+    padding: 100px 0;
     h2 {
         font-family: 'Open Sans', sans-serif;
         font-size: 5.5rem;
@@ -352,11 +361,11 @@ span.kickstarter-button {
 
     span.kickstarter-button {
         color: #FFF;
-        background: #41A269;
+        background: #8ACDAC;
         margin: 0;
 
         &::before {
-            background: #23A06A;
+            background: #41A269;
         }
     }
 }
