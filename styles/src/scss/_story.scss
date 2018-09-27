@@ -1,0 +1,110 @@
+/* Our story Page CSS */
+
+@keyframes textPopIn {
+    from {
+        display: none;
+        opacity: 0;
+        transform: translateY(30%);
+    }
+
+    to {
+        display: inline-block;
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes textPopOut {
+    from {
+        display: none;
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    to {
+        display: inline-block;
+        opacity: 0;
+        transform: translateY(-30%);
+    }
+}
+
+main.story-container {
+    display: flex;
+    justify-content: space-between;
+
+    .text-story {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #8ACDAC;
+        height: 50vh;
+        position: sticky;
+        top: calc(50vh);
+        margin-top: calc(50vh - 100px);
+        transform: translateY(-50%);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+        .timeline-element {
+            animation-duration: 1s;
+            animation-name: textPopOut;
+            animation-fill-mode: backwards;
+
+            &.is-active {
+                display: inline-block;
+                animation-duration: 1s;
+                animation-name: textPopIn;
+                animation-fill-mode: backwards;
+
+                span {
+                    display: inline-block;
+                }
+
+                p {
+                    display: inline-block;
+                }
+            }
+
+            span {
+                display: none;
+                font-size: 15rem;
+                animation-duration: 1s;
+                animation-name: textPopOut;
+                animation-fill-mode: backwards;
+            }
+
+            p {
+                display: none;
+                font-size: 1.6rem;
+                animation-duration: 1s;
+                animation-name: textPopOut;
+                animation-fill-mode: backwards;
+            }
+        }
+    }
+
+    .pic-story {
+        .pic-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-content: space-around;
+
+            .pic-element {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 25vh;
+            }
+
+            .pic-element:first-of-type {
+                margin-top: calc(50vh - 100px);
+                transform: translateY(-50%);
+                margin-bottom: 10vh;
+            }
+
+            .pic-element:last-of-type {
+                margin-bottom: attr(height);
+            }
+        }
+    }
+}
