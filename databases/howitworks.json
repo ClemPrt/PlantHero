@@ -1,0 +1,35 @@
+let howitworks = {
+  "h3":[
+    "Automatic Irrigation",
+    "The Natural Cycle",
+    "Planting Medium",
+    "Nutrition ",
+    "Zero Electricity",
+    "Do-It-Yourself",
+  ],
+  "h2": [
+    "Self-watering",
+    "How much or how little to water ?",
+    "It’s not soil",
+    "Vit-A, B or C ?",
+    "No messy wires, no plugs.",
+    "Build, Decorate, Done.",
+  ],
+  "descriptions": [
+    "Yes, it’s self-watering. When it comes to watering your plant, feel free to forget for a week or even a month! Plant Hero does the job for you.How? Water is held in the tank by atmospheric pressure. It will gradually seep out onto the receded tray, and then reabsorbed by your plant through a special ceramic medium. Your one job is to refill the water tank whenever it gets low. A full tank lasts for about a month or more, depending on the temperature and humidity of the environment (psst, that’s only 12 refills a year).",
+    "How much or how little to water? Plant Hero eliminates the guesswork by mimicking Mother Nature. Your plant decides when and how much to drink by absorbing water naturally from bottom-up. Benefits? It creates a consistent water cycle that keeps your plant gorgeous & healthy - Mother Nature knows best.",
+    "It’s not soil. We’re using a special type of ceramic medium that has excellent properties for hydration. It is also pH neutral, disease resistant, AND pest resistant - yup, no worms! How does it help? This ceramic medium has the ability to hold water and nutrients like your plant’s life depends on it - #ItDoes. So, no need to panic if you forgot to refill the water tank (again). This medium will remain moist for an extra 1 to 2 weeks, keeping your plant well-hydrated!",
+    "Vit-A, B or C? Nutrient deficiency is one of the top three plant killers. But, It’s not vit-A, B or C, it’s vit-P, N and K (Phosphorus, Nitrogen, and Potassium) that your plant craves! How then? We created a multi-vitamin pill that contains a special mix of P, N and K nutrients, as well as probiotic microbes. This will keep your plant strong and healthy.",
+    "No messy wires, no plugs. We built Plant Hero to run on zero electricity. Every essential process is powered by nature. No need to worry about the voltage or the international adapter. Benefit? Zero electricity means its kind on your utility bill and the environment. Plus, you can place it wherever - there are no wires.",
+    "Build, Decorate, Done. You know that zen feeling when decorating your pot and arranging your plants? What about the pain of watering them and accidentally knocking over the decor? How then? With Plant Hero, you’ll only experience the fun in building and decorating your pot. All other duties are taken care of.",
+  ],
+  "illustrations": [
+    "./images/howitworks/illustrations/selfwatering.png",
+    "./images/howitworks/illustrations/naturalcycle.png",
+    "./images/howitworks/illustrations/plantingmedium.png",
+    "./images/howitworks/illustrations/nutrition.png",
+    "./images/howitworks/illustrations/noelectricity.png",
+    "./images/howitworks/illustrations/doityourself.png",
+
+  ],
+}
