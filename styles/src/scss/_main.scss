@@ -18,7 +18,7 @@ body {
 
 a{
     color: inherit;
-    
+
     &:active{
         text-decoration: none;
     }
@@ -212,86 +212,71 @@ span.kickstarter-button {
 
         .slider {
             overflow-x: hidden;
-
             ul.slideshow {
                 display: flex;
                 flex-direction: row;
                 align-content: space-around;
                 list-style: none;
-                width: 10000px;
                 transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-
                 li.slide {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    width: 370px;
-                    border-radius: 15px;
-                    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-                    margin-right: 20vw;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  width: 370px;
+                  border-radius: 15px;
+                  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+                  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10), 0 6px 6px rgba(0, 0, 0, 0.05);
+                  img.slide-illustration {
+                      width: 100%;
+                      border-radius: 15px 15px 0px 0px;
+                  }
 
-                    &:hover {
-                        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10), 0 6px 6px rgba(0, 0, 0, 0.05);
-                        transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-                    }
+                  img.icon {
+                      width: 50px;
+                      height: 50px;
+                      margin: 20px 0;
+                  }
 
-                    &.is-active {
-                        width: 370px;
-                        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10), 0 6px 6px rgba(0, 0, 0, 0.05);
-                        transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-                    }
+                  h3 {
+                      font-family: 'Open Sans', sans-serif;
+                      font-size: 2rem;
+                      font-weight: 600;
+                      margin-bottom: 30px;
+                      position: relative;
+                      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 
-                    img.slide-illustration {
-                        width: 100%;
-                        border-radius: 15px 15px 0px 0px;
-                    }
+                      &::after {
+                          content: '';
+                          width: 1px;
+                          height: 20px;
+                          background: #000;
+                          position: absolute;
+                          top: 3rem;
+                          left: 50%;
+                          margin-bottom: 20px;
+                          transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+                      }
+                  }
 
-                    img.icon {
-                        width: 50px;
-                        height: 50px;
-                        margin: 20px 0;
-                    }
+                  &:hover h3 {
+                      margin-bottom: 40px;
+                      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 
-                    h3 {
-                        font-family: 'Open Sans', sans-serif;
-                        font-size: 2rem;
-                        font-weight: 600;
-                        margin-bottom: 30px;
-                        position: relative;
-                        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+                      &::after {
+                          height: 30px;
+                          transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+                      }
+                  }
 
-                        &::after {
-                            content: '';
-                            width: 1px;
-                            height: 20px;
-                            background: #000;
-                            position: absolute;
-                            top: 3rem;
-                            left: 50%;
-                            margin-bottom: 20px;
-                            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-                        }
-                    }
-
-                    &:hover h3 {
-                        margin-bottom: 40px;
-                        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-
-                        &::after {
-                            height: 30px;
-                            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-                        }
-                    }
-
-                    p.slide-description {
-                        padding: 0 10%;
-                        text-align: center;
-                        white-space: pre-line;
-                        font-family: 'Open Sans', sans-serif;
-                        font-size: 1.8rem;
-                        font-weight: 400;
-                        margin-bottom: 20px;
-                    }
+                  p.slide-description {
+                      padding: 0 10%;
+                      text-align: center;
+                      white-space: pre-line;
+                      font-family: 'Open Sans', sans-serif;
+                      font-size: 1.8rem;
+                      font-weight: 400;
+                      margin-bottom: 20px;
+                  }
                 }
             }
         }
