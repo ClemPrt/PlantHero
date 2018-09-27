@@ -438,8 +438,9 @@ main.story-container {
       margin-bottom: attr(height); }
 
 #howitswork #bg1 {
-  background-image: url(../../../images/howitswork/bg1.png);
+  background-image: url(../../../images/howitworks/automaticwatering.gif);
   background-size: cover;
+  background-position: center;
   margin-top: 10vw; }
 #howitswork h2 {
   font-size: 4rem;
@@ -455,5 +456,7 @@ main.story-container {
   letter-spacing: 0.8px;
   line-height: 25px;
   width: 85%; }
+#howitswork img {
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
