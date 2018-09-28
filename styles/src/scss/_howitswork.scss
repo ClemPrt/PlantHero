@@ -10,10 +10,15 @@
         }
     }
 
+    .bg{
+      display: flex;
+      align-content: center;
+    }
     h2{
         font-size: 4rem;
         margin: 3% 0% 3% 0%;
         font-family: "Pencilpete";
+
     }
 
     h3{
@@ -28,12 +33,6 @@
         letter-spacing: 0.8px;
         line-height: 25px;
         width: 85%;
-
-        &::after {
-            content: "";
-            
-
-        }
     }
 
     img{
