@@ -26,9 +26,9 @@ let howitworks = {
   "illustrations": [
     "../images/howitworks/automaticwatering.gif",
     "../images/howitworks/naturalcycle.png",
-    "../images/howitworks/plantingmedium.png",
-    "../images/howitworks/nutrition.png",
+    "../images/howitworks/plantingmedium.gif",
+    "../images/howitworks/nutrition.jpg",
     "../images/howitworks/noelectricity.png",
-    "../images/howitworks/doityourself.png"
+    "../images/howitworks/doityourself.gif"
   ],
 }
