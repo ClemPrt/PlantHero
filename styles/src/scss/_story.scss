@@ -29,70 +29,45 @@
 }
 
 main.story-container {
+  display: flex;
+  justify-content: center;
+  .story-slideshow{
     display: flex;
-    justify-content: space-between;
-
-    .text-story {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: #8ACDAC;
-        height: 50vh;
-        position: sticky;
-        top: calc(50vh);
-        margin-top: calc(50vh - 100px);
-        transform: translateY(-50%);
-        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-
-        .timeline-element {
-
-            &.is-active {
-                display: inline-block;
-
-                span {
-                    display: inline-block;
-                }
-
-                p {
-                    display: inline-block;
-                }
-            }
-
-            span {
-                display: none;
-                font-size: 15rem;
-            }
-
-            p {
-                display: none;
-                font-size: 1.6rem;
-            }
+    flex-direction: column;
+    margin-top: calc(50vh - 200px);
+    .pic-text-story{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 100px;
+      .text-story-container{
+        .text-story{
+          opacity: 0;
+          transform: translateY(50px);
+          transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+          &.is-active{
+            opacity: 1;
+            position: fixed;
+            width: 500px;
+            top: 50vh;
+            transform: translateY(0);
+            transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+          }
+          span{
+            font-size: 5rem;
+          }
+          p{
+            font-size: 1.6rem;
+          }
         }
-    }
 
-    .pic-story {
-        .pic-list {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-content: space-around;
+      }
+      .pic-story{
+        img{
 
-            .pic-element {
-                display: flex;
-                justify-content: center;
-                margin-bottom: 25vh;
-            }
-
-            .pic-element:first-of-type {
-                margin-top: calc(50vh - 100px);
-                transform: translateY(-50%);
-                margin-bottom: 10vh;
-            }
-
-            .pic-element:last-of-type {
-                margin-bottom: attr(height);
-            }
         }
+      }
     }
+  }
 }

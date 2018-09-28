@@ -75,13 +75,13 @@ span.kickstarter-button {
     align-items: center;
     width: 130px;
     height: 60px;
-    background: url('../images/icons/button.png');
+    background: url('../images/icons/button.PNG');
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
 
     &:hover {
-        background: url('../images/icons/button-is-active.png');
+        background: url('../images/icons/button-is-active.PNG');
         background-size: contain;
         background-repeat: no-repeat;
         transform: translate(3.8%, -10%);
@@ -95,15 +95,17 @@ span.kickstarter-button {
 }
 
 .hello-gif{
+  width: 92px;
+  height: 190px;
   position: relative;
   z-index: 1000;
   transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-  img{
-    position: fixed;
-    height: 190px;
-    right: 0;
-  }
+  background: url('../images/happy-hello.gif');
+  background-size: cover;
+  position: fixed;
+  right: 0;
 }
+
 /* ------------------- */
 
 

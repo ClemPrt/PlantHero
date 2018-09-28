@@ -5,10 +5,6 @@ kickstarterButton.addEventListener('mouseover', function(){
   let gifContainer=document.createElement('div')
   gifContainer.classList.add('hello-gif')
   body.insertBefore(gifContainer,beforeElement)
-  let gif=document.createElement('img')
-  gif.setAttribute('src','./images/happy-hello.gif')
-  gif.setAttribute('alt','Hello gif plant')
-  gifContainer.appendChild(gif)
 })
 kickstarterButton.addEventListener('mouseleave', function(){
   let gifContainer=document.querySelector('.hello-gif')
@@ -31,7 +27,23 @@ window.addEventListener('load', function(){
 })
 
 
-let imgPositions = [0]
+let imageStory=document.querySelector('.pic-story img')
+let imageHeight=imageStory.offsetHeight
+let textStory=document.querySelectorAll('.text-story')
+let imageStatut=0
+document.addEventListener('scroll',function(e){
+  let scrollPosition=window.scrollY
+  console.log(scrollPosition)
+  if(scrollPosition>imageHeight ){
+    textStory[imageStatut].classList.remove('is-active')
+    textStory[imageStatut+1].classList.add('is-active')
+    imageStatut++
+    imageHeight+=365
+    console.log('hey')
+  }
+})
+console.log(imageHeight)
+/*let imgPositions = [0]
 let images = document.querySelectorAll('.pic-element img')
 let imgDescription = ['#8ACDAC', '#EAE1D8', '#23A06A', '#E9464B']
 let textZone = document.querySelector('.text-story')
@@ -77,7 +89,7 @@ function storyImgChanger(imgPositions, imgDescription, textZone, timelineElement
 }
 document.addEventListener('scroll', function () {
     storyImgChanger(imgPositions, imgDescription, textZone, timelineElements)
-})
+})*/
 
 
 /* Parallax effect animation */
