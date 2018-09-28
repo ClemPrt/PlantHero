@@ -108,10 +108,6 @@ span.kickstarter-button {
 
 /* ------------------- */
 
-
-
-
-
 /* Home Page CSS */
 .home-container {
 
@@ -141,7 +137,7 @@ span.kickstarter-button {
                 &::before {
                     content: '';
                     width: calc(5rem*11.1);
-                    height: 28%; 
+                    height: 28%;
                     background: #98CBAE;
                     position: absolute;
                     top: 5rem;
@@ -192,10 +188,6 @@ span.kickstarter-button {
 
     /* ------ */
 
-
-
-
-
     /* ------ Facts section ------ */
     .facts {
         display: flex;
@@ -208,7 +200,7 @@ span.kickstarter-button {
             font-size: 5.5rem;
             font-weight: 700;
             position: relative;
-            margin-bottom: 50px;
+            margin-bottom: 80px;
             z-index: 1;
 
             &::before {
@@ -225,6 +217,7 @@ span.kickstarter-button {
         .slider {
             overflow-x: hidden;
             cursor:grab;
+            margin-bottom: 50px;
             ul.slideshow {
                 display: flex;
                 flex-direction: row;
@@ -241,13 +234,11 @@ span.kickstarter-button {
                   flex-direction: column;
                   align-items: center;
                   width: 370px;
-                  border-radius: 15px;
                   transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
                   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10), 0 6px 6px rgba(0, 0, 0, 0.05);
                   margin:20px 0;
                   img.slide-illustration {
                       width: 100%;
-                      border-radius: 15px 15px 0px 0px;
                   }
 
                   img.icon {
@@ -305,7 +296,71 @@ span.kickstarter-button {
 
 /* ------ */
 
+/* ------ Story section ------ */
+.product-view{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  h2 {
+      display: inline-block;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 5.5rem;
+      font-weight: 700;
+      position: relative;
+      margin-bottom: 80px;
+      z-index: 1;
 
+      &::before {
+          content: '';
+          width: calc(5rem*8);
+          height: 28%;
+          background: #98CBAE;
+          position: absolute;
+          top: 5rem;
+          z-index: -1;
+      }
+  }
+  .element{
+    display: flex;
+    flex-direction: row;
+    .image-element{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background:#EAE2D8;
+      img{
+        width: 70%;
+        transform: scale(1);
+        transition: all 5s cubic-bezier(0.25, 0.8, 0.25, 1);
+      }
+    }
+    .text-element{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h4{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 5rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+      p{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 400;
+        text-align: center;
+        width: 70%;
+      }
+    }
+    &:hover .image-element img{
+      transform: scale(1.2);
+      transition: all 5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+  }
+}
+/* ------ */
 
 /* ------ Story section ------ */
 .story {

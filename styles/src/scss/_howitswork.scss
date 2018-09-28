@@ -1,23 +1,24 @@
 #howitswork{
     section{
         height: calc(70vh - 100px);
-
+        display: flex;
+        align-items: center;
+        flex-direction: row;
         @media screen and (max-width: 1280px) {
             height: 100vh;
+            flex-direction: column;
         }
     }
 
     .bg{
-        background-image: url(../../../images/howitworks/automaticwatering.gif);
-        background-size: cover;
-        background-position: center;
+      display: flex;
+      align-content: center;
     }
-
     h2{
         font-size: 4rem;
         margin: 3% 0% 3% 0%;
         font-family: "Pencilpete";
-        
+
     }
 
     h3{
@@ -29,7 +30,7 @@
     p{
         font-size: 1.5rem;
         margin-top: 5%;
-        letter-spacing: 0.8px; 
+        letter-spacing: 0.8px;
         line-height: 25px;
         width: 85%;
     }

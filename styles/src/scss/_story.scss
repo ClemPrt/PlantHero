@@ -45,6 +45,7 @@ main.story-container {
         .text-story{
           opacity: 0;
           transform: translateY(50px);
+          display: none;
           transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
           &.is-active{
             opacity: 1;
