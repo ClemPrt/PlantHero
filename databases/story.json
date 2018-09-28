@@ -9,7 +9,7 @@ let story = {
     "2018",
     "2018",
     "2018",
-    "2019"
+    "2018"
   ],
   "month": [
     "December",
@@ -36,15 +36,18 @@ let story = {
     "It’s the end of our project, we are proud to announce you the success of it and finally we are able to package and ship the product to all the contributors and surely more."
   ],
   "illustrations":[
-    "./images/story/illustrations/1.png",
-    "./images/story/illustrations/2.png",
-    "./images/story/illustrations/3.png",
-    "./images/story/illustrations/4.png",
-    "./images/story/illustrations/5.png",
-    "./images/story/illustrations/6.png",
-    "./images/story/illustrations/7.png",
-    "./images/story/illustrations/8.png",
-    "./images/story/illustrations/9.png",
-    "./images/story/illustrations/10.png"
+    "../images/story/1.png",
+    "../images/story/2.png",
+    "../images/story/3.png",
+    "../images/story/4.png",
+    "../images/story/5.png",
+    "../images/story/6.png",
+    "../images/story/7.png",
+    "../images/story/8.png",
+    "../images/story/9.png",
+    "../images/story/10.png"
+  ],
+  "names":[
+    ""
   ]
 }

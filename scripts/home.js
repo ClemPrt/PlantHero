@@ -61,3 +61,41 @@ for(let i=0; i<sliderIllustrations.length; i++){
   pSlide.innerHTML=sliderDescriptions[i]
   liSlide.appendChild(pSlide)
 }
+
+/* PRODUCT PART CARDS GENERATION */
+let productImages=JSON.stringify(product.images)
+let productNames=JSON.stringify(product.names)
+let productTitles=JSON.stringify(product.titles)
+let productDescriptions=JSON.stringify(product.descriptions)
+let productColors=JSON.stringify(product.colors)
+let elementsContainer=document.querySelector('.product-view')
+productImages=JSON.parse(productImages)
+productNames=JSON.parse(productNames)
+productTitles=JSON.parse(productTitles)
+productDescriptions=JSON.parse(productDescriptions)
+productColors=JSON.parse(productColors)
+for(let i=0;i<productImages.length;i++){
+  let element=document.createElement('div')
+  let imageContainer=document.createElement('div')
+  let imageElement=document.createElement('img')
+  let textElement=document.createElement('div')
+  let h4Element=document.createElement('h4')
+  let descriptionElement=document.createElement('p')
+  element.classList.add('row', 'container-fluid', 'element')
+  elementsContainer.appendChild(element)
+  imageContainer.classList.add('col-lg-6', 'image-element')
+  element.appendChild(imageContainer)
+  imageContainer.style.backgroundColor=productColors[i]
+  if(i%2 != 0){
+    imageContainer.style.order='1'
+  }
+  imageElement.setAttribute('src',productImages[i])
+  imageElement.setAttribute('alt',productNames[i])
+  imageContainer.appendChild(imageElement)
+  textElement.classList.add('col-lg-6','text-element')
+  element.appendChild(textElement)
+  h4Element.innerHTML=productTitles[i]
+  textElement.appendChild(h4Element)
+  descriptionElement.innerHTML=productDescriptions[i]
+  textElement.appendChild(descriptionElement)
+}

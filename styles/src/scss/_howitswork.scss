@@ -1,19 +1,37 @@
 #howitswork{
     section{
         height: calc(70vh - 100px);
+<<<<<<< HEAD
         background-image: url('../../../images/howitworks/bg.png');
         
 
+=======
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+>>>>>>> c7d16965b4a23599018c95e50f45707de949ff09
         @media screen and (max-width: 1280px) {
             height: 100vh;
+            flex-direction: column;
         }
     }
 
+<<<<<<< HEAD
 
+=======
+    .bg{
+      display: flex;
+      align-content: center;
+    }
+>>>>>>> c7d16965b4a23599018c95e50f45707de949ff09
     h2{
         font-size: 4rem;
         margin: 3% 0% 3% 0%;
         font-family: "Pencilpete";
+<<<<<<< HEAD
+=======
+
+>>>>>>> c7d16965b4a23599018c95e50f45707de949ff09
     }
 
     h3{
@@ -25,7 +43,7 @@
     p{
         font-size: 1.5rem;
         margin-top: 5%;
-        letter-spacing: 0.8px; 
+        letter-spacing: 0.8px;
         line-height: 25px;
         width: 85%;
 

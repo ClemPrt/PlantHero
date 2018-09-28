@@ -1,0 +1,37 @@
+let product={
+  "images":[
+    "./images/product/reservoir.PNG",
+    "./images/product/pot.PNG",
+    "./images/product/tray.PNG",
+    "./images/product/clay-medium.PNG",
+    "./images/product/pebbles.PNG"
+  ],
+  "names":[
+    "reservoir Plant Hero",
+    "tray Plant Hero",
+    "plant holder Plant Hero",
+    "clay-medium Plant Hero",
+    "pebbles Plant Hero"
+  ],
+  "titles":[
+    "The reservoir",
+    "The plant holder",
+    "The tray",
+    "Our clay medium",
+    "Our pebbles"
+  ],
+  "descriptions":[
+    "The water reservoir that feeds the plant.",
+    "Insert plant here!",
+    "Holds all your bits & bobs. It facilitates water flow from tank to pot",
+    "The soil replacement. It's pH neutral, disease resistant <stron>AND</strong> pest resistant",
+    "Comes in a white aesthetic & keeps the mozzies away"
+  ],
+  "colors":[
+    "#333333",
+    "#707070",
+    "#98CBAE",
+    "EAE2D8",
+    "#896962"
+  ]
+}
