@@ -1,6 +1,10 @@
 #howitswork{
     section{
         height: calc(70vh - 100px);
+
+        @media screen and (max-width: 1280px) {
+            height: 100vh;
+        }
     }
 
     .bg{
@@ -25,7 +29,7 @@
     p{
         font-size: 1.5rem;
         margin-top: 5%;
-        letter-spacing: 0.8px;
+        letter-spacing: 0.8px; 
         line-height: 25px;
         width: 85%;
     }
