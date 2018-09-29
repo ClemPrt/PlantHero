@@ -1,6 +1,6 @@
 let kickstarterButton=document.querySelector('header .kickstarter-button')
 let body=document.querySelector('body')
-let beforeElement=document.querySelector('.main-container')
+let beforeElement=document.querySelector('main')
 kickstarterButton.addEventListener('mouseover', function(){
   let gifContainer=document.createElement('div')
   gifContainer.classList.add('hello-gif')
