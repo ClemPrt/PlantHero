@@ -29,7 +29,7 @@ for (let i = 0; i < howitworksIllustrations.length; i++) {
   row.classList.add('row')
   sectionHowitworks.appendChild(row)
   containerText.classList.add('col-md-6','col-xs-12','text')
-  containerText.setAttribute('data-aos','fade-left')
+  containerText.setAttribute('data-aos','fade-right')
   containerText.setAttribute('data-aos-anchor-placement','top-bottom')
   row.appendChild(containerText)
   titleH2.innerHTML=howitworksH2[i]
@@ -39,7 +39,7 @@ for (let i = 0; i < howitworksIllustrations.length; i++) {
   textHowitworks.innerHTML=howitworksDescriptions[i]
   containerText.appendChild(textHowitworks)
   containerImage.classList.add('col-md-6','col-xs-12','image')
-  containerImage.setAttribute('data-aos','fade-right')
+  containerImage.setAttribute('data-aos','fade-left')
   containerImage.setAttribute('data-aos-anchor-placement','top-bottom')
   row.appendChild(containerImage)
   imageHowitworks.setAttribute('src',howitworksIllustrations[i])
