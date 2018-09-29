@@ -13,19 +13,37 @@ window.addEventListener('load', function(){
 })
 
 /* PARALLAX EFFECT ANIMATION */
-window.onload = function (){
-  let conceptBloc = document.querySelector('.concept')
-  let layerOne = document.querySelector('.concept-text')
-  let layerTwo = document.querySelector('.concept-animation')
-  conceptBloc.addEventListener('mousemove', function (e) {
-    let pageX = e.clientX
-    let pageY = e.clientY
-    layerOne.style.webkitTransform = 'translateX(' + pageX / 170 + '%) translateY(' + pageY / 70 + '%)';
-    layerOne.style.transform = 'translateX(' + pageX / 170 + '%) translateY(' + pageY / 70 + '%)';
-    layerTwo.style.webkitTransform = 'translateX(-' + pageX / 200 + '%) translateY(-' + pageY / 350 + '%)';
-    layerTwo.style.transform = 'translateX(-' + pageX / 200 + '%) translateY(-' + pageY / 350 + '%)';
-  })
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)){
+  window.ondevicemotion = function (e){
+    let conceptBloc = document.querySelector('.concept')
+    let layerOne = document.querySelector('.concept-text')
+    let layerTwo = document.querySelector('.concept-animation')
+    conceptBloc.addEventListener('mousemove', function (e) {
+      let pageX = e.accelerationIncludingGravity.x
+      let pageY = e.accelerationIncludingGravity.y
+      layerOne.style.webkitTransform = 'translateX(' + pageX / 170 + '%) translateY(' + pageY / 70 + '%)';
+      layerOne.style.transform = 'translateX(' + pageX / 170 + '%) translateY(' + pageY / 70 + '%)';
+      layerTwo.style.webkitTransform = 'translateX(-' + pageX / 200 + '%) translateY(-' + pageY / 350 + '%)';
+      layerTwo.style.transform = 'translateX(-' + pageX / 200 + '%) translateY(-' + pageY / 350 + '%)';
+    })
+  }
 }
+else{
+  window.onload = function (){
+    let conceptBloc = document.querySelector('.concept')
+    let layerOne = document.querySelector('.concept-text')
+    let layerTwo = document.querySelector('.concept-animation')
+    conceptBloc.addEventListener('mousemove', function (e) {
+      let pageX = e.clientX
+      let pageY = e.clientY
+      layerOne.style.webkitTransform = 'translateX(' + pageX / 170 + '%) translateY(' + pageY / 70 + '%)';
+      layerOne.style.transform = 'translateX(' + pageX / 170 + '%) translateY(' + pageY / 70 + '%)';
+      layerTwo.style.webkitTransform = 'translateX(-' + pageX / 200 + '%) translateY(-' + pageY / 350 + '%)';
+      layerTwo.style.transform = 'translateX(-' + pageX / 200 + '%) translateY(-' + pageY / 350 + '%)';
+    })
+  }
+}
+
 
 /* FACTS SLIDER GENERATION */
 let sliderIllustrations=JSON.stringify(slider.illustrations)
