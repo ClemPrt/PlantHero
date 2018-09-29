@@ -1,5 +1,7 @@
 /* Header nav CSS */
 header{
+  display: flex;
+  justify-content: center;
     z-index: 999;
     position: sticky;
     top:0;
@@ -9,6 +11,7 @@ header{
     font-size: 2rem;
     font-weight: 600;
 nav{
+  width: 90%;
     .container-fluid{
         width: 100%;
         height: 80px;
@@ -42,5 +45,11 @@ nav{
             }
         }
     }
+}
+.container-fluid{
+  padding: 0;
+}
+.col-lg-12{
+  padding: 0;
 }
 /* ------------------- */

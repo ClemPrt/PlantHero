@@ -69,30 +69,33 @@ span.kickstarter-button {
     }
 }
 
-.button-work {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 130px;
-    height: 60px;
-    background: url('../images/icons/button.PNG');
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
-
-    &:hover {
-        background: url('../images/icons/button-is-active.PNG');
-        background-size: contain;
-        background-repeat: no-repeat;
-        transform: translate(3.8%, -10%);
-    }
-
-    span.button {
+a{
+  width: 130px;
+  .button-work {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 130px;
+      height: 60px;
+      background: url('../images/icons/button.PNG');
+      background-size: contain;
+      background-repeat: no-repeat;
+      span.button {
+        color:#000000;
         font-family: 'pencilpete';
         font-size: $text-size-main;
         transform: translate(-4px, 7px);
     }
+  }
+  &:hover .button-work{
+      background: url('../images/icons/button-is-active.PNG');
+      background-size: contain;
+      background-repeat: no-repeat;
+      transform: translate(3.8%, -10%);
+  }
 }
+
+
 
 .hello-gif{
   width: 92px;
@@ -116,6 +119,7 @@ span.kickstarter-button {
         display: flex;
         flex-direction: row;
         align-content: center;
+        justify-content: center;
         min-height: 470px;
         margin: 100px 0 150px 0;
 
@@ -179,6 +183,7 @@ span.kickstarter-button {
         }
 
         .concept-animation {
+          width: 50%;
             background: url('../images/happy-again.gif') 100% 100%;
             background-size: contain;
             background-repeat: no-repeat;
@@ -394,7 +399,7 @@ span.kickstarter-button {
         height: 526px;
         margin-bottom: 50px;
     }
-    .button-work{
+    a{
       margin-bottom:80px;
     }
 }
